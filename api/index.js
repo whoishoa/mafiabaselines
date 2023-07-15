@@ -13,12 +13,12 @@ var game = require('../game');
 if(argv.wills)
 	game.enableWills();
 
-app.set('views', __dirname + '/views');
-app.set('view engine', "jade");
-app.engine('jade', require('jade').__express);
-app.get("/", function(req, res){
-	res.render("index");
-});
+// app.set('views', __dirname + '/views');
+// app.set('view engine', "jade");
+// app.engine('jade', require('jade').__express);
+// app.get("/", function(req, res){
+// 	res.render("index");
+// });
 
 app.use(express.static(__dirname + '/public'));
 
