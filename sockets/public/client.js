@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	var messages = [];
-	var socket = io.connect('https://mafiabaselines.vercel.app/');
+	var socket = io.connect('http://'+location.host);
 	var field = document.getElementById("field");
 	var sendButton = document.getElementById("send");
 	var nameButton = document.getElementById("nick");
