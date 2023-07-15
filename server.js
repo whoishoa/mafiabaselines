@@ -7,7 +7,7 @@ global.argv = require ('optimist')
 	.alias('t', 'countdown')
 	.argv
 ;
-var port = process.env.PORT || 8080;
+var port = 80;
 
 var game = require('./game');
 if(argv.wills)
